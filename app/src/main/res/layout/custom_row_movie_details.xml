@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_row_search_movie.xmlrow_search_movie.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="4dip"
+    android:paddingBottom="6dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ff57739b">
+
+    <TextView
+        style="@style/CodeFont"
+        android:id="@+id/ATTRIBUTE"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        style="@style/CodeFont"
+        android:id="@+id/VALUE"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+
+</LinearLayout>
+

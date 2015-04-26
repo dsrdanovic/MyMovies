@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="My Movies is android application which gives you ability to search movies through web service called OMDb API (The Open Movie Database).  Registration is required to be able to use the application. You can store movies to the online database and load detailed informations and posters of your own collection.  One of the features of this application is to browse your movie collection by title and genre, or to store movies to Unwatched section and later switch them to your collection. You can access your movie collection with your account from every android device where My Movies is installed." />
+    <Button
+        style="@style/btnStyleArsenic"
+        android:id="@+id/btnOK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/ivAuthor"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/txtAbout"
+        android:src="@drawable/dario"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#7a670b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description"
+            android:id="@+id/tvDescription"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="#7a670b"
+        android:layout_below="@+id/txtAbout"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Developer"
+            android:id="@+id/tvDeveloper"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Dario Srdanović"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/ivNameSurname"
+        android:layout_toRightOf="@+id/ivNameSurname"
+        android:layout_alignTop="@+id/ivNameSurname"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dario.srdanovic@gmail.com"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/ivMail"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignTop="@+id/ivMail"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="+38598323185"
+        android:id="@+id/tvPhoneNumber"
+        android:layout_alignBottom="@+id/ivCall"
+        android:layout_toRightOf="@+id/ivCall"
+        android:layout_alignTop="@+id/ivCall"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivNameSurname"
+        android:src="@drawable/ic_action_person"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/ivAuthor"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivMail"
+        android:src="@drawable/ic_action_email"
+        android:layout_below="@+id/ivNameSurname"
+        android:layout_alignLeft="@+id/ivNameSurname" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCall"
+        android:src="@drawable/ic_action_call"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_action_place"
+        android:layout_below="@+id/tvPhoneNumber"
+        android:layout_alignLeft="@+id/ivCall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Osijek"
+        android:id="@+id/textView4"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/tvPhoneNumber"
+        android:layout_alignTop="@+id/imageView" />
+
+</RelativeLayout>

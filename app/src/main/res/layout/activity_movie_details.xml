@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="etf.mymovies.MovieDetailsActivity"
+    android:background="#ff57739b">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/ivPoster"
+        android:background="#ff57739b"
+        android:layout_marginTop="5dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvMovieDetails"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivPoster"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7a670b"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp">
+
+        <Button
+            android:background="@drawable/custom_btn_arsenic"
+            android:textColor="#ffffffff"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="DELETE"
+            android:drawableLeft="@drawable/ic_action_discard"
+            android:id="@+id/btnDelete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Added:"
+            android:id="@+id/tvAdded"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvDate"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvAdded"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/btnDelete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

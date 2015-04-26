@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center" />
+    <Button
+        android:drawableLeft="@drawable/ic_action_collection"
+        style="@style/btnStyleArsenic"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text=" ADD TO MY COLLECTION"
+        android:id="@+id/btnMyCollection" />
+    <Button
+        android:drawableLeft="@drawable/ic_action_discard"
+        style="@style/btnStyleArsenic"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text=" DELETE"
+        android:id="@+id/btnDelete" />
+    <Button
+        android:drawableLeft="@drawable/ic_action_back"
+        style="@style/btnStyleArsenic"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text=" BACK"
+        android:id="@+id/btnBack" />
+</LinearLayout>

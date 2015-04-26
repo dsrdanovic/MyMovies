@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7a670b"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#7a670b"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp">
+
+        <EditText
+            android:inputType="textNoSuggestions|textPersonName|textMultiLine"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ff9ec1ff"
+            android:hint=" Movie title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCondition"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/txtYear" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ff9ec1ff"
+            android:hint="Year"
+            android:gravity="center_horizontal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtYear"
+            android:layout_alignBottom="@+id/search"
+            android:layout_toLeftOf="@+id/search" />
+
+        <Button
+            android:background="@drawable/custom_btn_arsenic"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:textColor="#ffffffff"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Search"
+            android:id="@+id/search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/txtCondition"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#7a670b"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:background="@drawable/custom_btn_arsenic"
+            android:drawableLeft="@drawable/ic_action_new"
+            android:textColor="#ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD MOVIE"
+            android:paddingLeft="110dp"
+            android:paddingRight="110dp"
+            android:id="@+id/addMovie"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+    <!-- Scrollable Content below header and above footer -->
+    <ScrollView
+        android:background="#ff57739b"
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@+id/footer"
+        android:layout_marginTop="5dp" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:id="@+id/ivPoster"
+            android:background="#ff57739b"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/results"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+ />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

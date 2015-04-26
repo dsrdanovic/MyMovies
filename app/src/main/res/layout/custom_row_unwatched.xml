@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <TextView android:id="@+id/id"
+        android:visibility="invisible"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/poster"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="5dp" />
+
+    <!-- Movie Title -->
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:text="TITLE"
+        android:layout_alignRight="@+id/imageView2" />
+
+    <!-- Rating -->
+    <TextView
+
+        android:id="@+id/releaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rating"
+        android:text="YEAR"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_marginTop="5dp" />
+
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/genre"
+        android:text="GENRE"
+        android:layout_below="@+id/releaseYear"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_marginTop="10dp" />
+    <!--
+    android:textColor="@color/genre"
+    -->
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_next_item"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView2" />
+
+
+
+</RelativeLayout>
